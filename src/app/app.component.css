@@ -1,0 +1,214 @@
+/* styles for form-container*/
+
+.form-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* styles for forms*/
+form {
+  width: 33vw;
+  background-color: rgb(255, 255, 253);
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+form input,
+select {
+  border-radius: 10px;
+  padding: 8px;
+}
+.margin-container {
+  margin: 20px;
+}
+/* styles for input field*/
+input {
+  width: 93%;
+}
+.gender input {
+  width: auto;
+}
+select {
+  width: 94%;
+}
+/* styles for column*/
+.column {
+  display: flex;
+}
+.column .col-common {
+  flex: 1;
+}
+.col-common input {
+  width: 86%;
+}
+/* set top-margin for form elements*/
+.column,
+.email,
+.address,
+.street1,
+.street2,
+.form-button,
+#checkbox,
+.skills1,
+.experience-container {
+  margin-top: 15px;
+}
+/* styles for buttons*/
+button {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(125, 58, 215);
+  color: rgb(252, 254, 252);
+}
+.form-button button {
+  width: 98%;
+}
+.user-button button {
+  width: 47%;
+  margin-top: 8px;
+}
+button:disabled {
+  opacity: 0.5;
+}
+/* styles for gender*/
+.gender .heading {
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+.gender .radio-buttons {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+/* styles for title*/
+.title {
+  font-size: xx-large;
+  font-weight: bolder;
+  text-align: center;
+  color: rgb(81, 45, 168);
+  margin-bottom: 20px;
+}
+
+/* styles for custom error messgae*/
+.error-msg {
+  font-weight: bold;
+  color: red;
+  margin-top: 2px;
+}
+/* styles for checkbox*/
+#checkbox {
+  width: 15px;
+}
+/* style for angular classes */
+form .ng-invalid.ng-touched {
+  border: 2px solid red;
+}
+/* styles for job container*/
+.experience-container {
+  border: 1px solid grey;
+}
+.experience {
+  margin: 3%;
+  margin-right: auto;
+}
+.exp-no {
+  margin-bottom: 2%;
+}
+.exp-button {
+  margin-top: 2%;
+}
+.exp-button button {
+  background-color: rgb(232, 0, 98);
+}
+.add-exp button {
+  margin-top: 2%;
+  background-color: rgb(34, 139, 34);
+}
+/* styles for cards*/
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  justify-content: space-around;
+  border-radius: 20px;
+  background-color: white;
+}
+.card-short-name {
+  font-weight: 900;
+  font-size: 300%;
+  border-radius: 50%;
+  background-color: rgb(33, 38, 45);
+  padding: 7%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+}
+.card-line {
+  height: 2px;
+  background-color: black;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.card-name {
+  font-size: x-large;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.add-details {
+  margin-bottom: 10px;
+}
+.address {
+  font-size: large;
+}
+/* styles for responsive form*/
+@media (1000px<=width<=1200px) {
+  form {
+    width: 50vw;
+  }
+  .card {
+    width: 40%;
+  }
+}
+@media (700px<=width<=1000px) {
+  form {
+    width: 65vw;
+  }
+  .card {
+    width: 50%;
+  }
+}
+@media (500px<=width<=700px) {
+  form {
+    width: 75vw;
+  }
+  .gender .radio-buttons {
+    width: 80%;
+  }
+  .card {
+    width: 65%;
+  }
+}
+@media (350px<=width<=500px) {
+  form {
+    width: 90vw;
+  }
+  .gender .radio-buttons {
+    width: 100%;
+  }
+  .margin-container {
+    margin: 10px;
+  }
+  select {
+    width: 97%;
+  }
+  .card {
+    width: 80%;
+  }
+}
